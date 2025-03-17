@@ -72,19 +72,96 @@
 
 
     
-def monkey_attack(monkey1_smile, monkey2_smile):
-    if monkey1_smile != monkey2_smile:
-        print("You're in Trouble!")
-    elif monkey1_smile and monkey2_smile:
-        print("Monkeys are happy! They're in a playing mood.")
-    else:
-        print("Monkeys are nervous!")
+# def monkey_attack(monkey1_smile, monkey2_smile):
+#     if monkey1_smile != monkey2_smile:
+#         print("You're in Trouble!")
+#     elif monkey1_smile and monkey2_smile:
+#         print("Monkeys are happy! They're in a playing mood.")
+#     else:
+#         print("Monkeys are nervous!")
 
-# Take input and convert it to boolean
-monkey1_smile = input("Is Monkey1 smiling? (True/False): ").strip().lower() == "true"
-monkey2_smile = input("Is Monkey2 smiling? (True/False): ").strip().lower() == "true"
+# # Take input and convert it to boolean
+# monkey1_smile = input("Is Monkey1 smiling? (True/False): ").strip().lower() == "true"
+# monkey2_smile = input("Is Monkey2 smiling? (True/False): ").strip().lower() == "true"
 
-monkey_attack(monkey1_smile, monkey2_smile)
+# monkey_attack(monkey1_smile, monkey2_smile)
+
+#**** types of variables in python function****
+
+'''
+1. local variable
+2. global variable
+
+
+
+def f1():
+  a=10
+  print(a)
+  
+f1()
+
+def f2():
+   print(a)  # name error a is not defined
+f2()
+
+
+'''
+
+# 1) to modify global variable keyword is global#
+ 
+# name="akshay"
+
+# def f1():
+#     global name
+#     name="vishal"
+#     print(name)
+    
+    
+# def f2():
+#     print(name)
+    
+# f1()
+# f2()
+
+
+# # 2) global :to declare a variable as global inside a function and we can access it outside the function #
+
+# def  f1():
+#     global a
+#     a=10
+#     print(a)
+    
+# def f2():
+#     print(a)
+    
+# f1()
+# f2()
+
+
+# global  () to declare a variable as global inside a function and we can access it outside the function #
+
+# a=100
+# def f1():
+#     a=200
+#     print(globals()["a"])
+#     print(a)
+    
+# f1()
+
+a=10
+b=20
+def f1():
+    a=100
+    b=200
+    print(a+b)
+    print(globals()["a"]+globals()["b"])
+f1()
+    
+
+
+
+
+
 
 
 
