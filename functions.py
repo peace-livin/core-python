@@ -37,25 +37,54 @@
 
 
 
-def Zigzag(num):
-    if num %3 == 0 and num %5 == 0:
-        return "zigzag"
-    elif num %3 == 0:
-        return "zig"
-    elif num %5 == 0:
-        return "zag"
-    else:
-       print(f"return number {num}is not divisible by 3 or 5")
+# def Zigzag(num):
+#     if num %3 == 0 and num %5 == 0:
+#         return "zigzag"
+#     elif num %3 == 0:
+#         return "zig"
+#     elif num %5 == 0:
+#         return "zag"
+#     else:
+#        print(f"return number {num}is not divisible by 3 or 5")
         
     
-print(Zigzag(3))
-print(Zigzag(25))
-print(Zigzag(30))
-(Zigzag(7))
+# print(Zigzag(3))
+# print(Zigzag(25))
+# print(Zigzag(30))
+# (Zigzag(7))
 
+
+# monkey smile 
+
+# def monkey_attack(monkey1_smile, monkey2_smile):
+#     if (monkey1_smile != monkey2_smile):
+#         print("You're in Trouble!")
+#     elif (monkey1_smile == True and monkey2_smile == True):
+#         print("Monkeys are happy! They're in a playing mood.")
+#     else:
+#         print("Monkeys are nervous!")
+
+
+# monkey1_smile = input("Is Monkey1 smiling? (True/False): ")
+# monkey2_smile = input("Is Monkey2 smiling? (True/False): ")
+
+# monkey_attack(monkey1_smile, monkey2_smile)
 
 
     
+def monkey_attack(monkey1_smile, monkey2_smile):
+    if monkey1_smile != monkey2_smile:
+        print("You're in Trouble!")
+    elif monkey1_smile and monkey2_smile:
+        print("Monkeys are happy! They're in a playing mood.")
+    else:
+        print("Monkeys are nervous!")
+
+# Take input and convert it to boolean
+monkey1_smile = input("Is Monkey1 smiling? (True/False): ").strip().lower() == "true"
+monkey2_smile = input("Is Monkey2 smiling? (True/False): ").strip().lower() == "true"
+
+monkey_attack(monkey1_smile, monkey2_smile)
 
 
 
