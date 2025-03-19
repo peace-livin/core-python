@@ -72,12 +72,14 @@
 
 num=[
     {'pid':111,'pname':'samsung-S24','price':125000,'cat':'Mobile'},
-     {'pid':222,'pname':'Apple','price':125000,'cat':'Mobile'},
-      {'pid':333,'pname':'hP','price':115000,'cat':'Laptop'},
-      {'pid':444,'pname':'honor','price':145000,'cat':'Laptop'},
+    {'pid':222,'pname':'Apple','price':125000,'cat':'Mobile'},
+    {'pid':333,'pname':'hP','price':115000,'cat':'Laptop'},
+    {'pid':444,'pname':'honor','price':145000,'cat':'Laptop'},
     ]
+
 
 out=list(filter(lambda x:x['cat']=='Mobile',num))
 print(out)
+
 
 
