@@ -38,32 +38,37 @@
 
 #Q4). take 5 subjects marks from user and pass or fail print total marks ,print percentage,
 # print grade using if elif else
-# num1=int(input("Enter subject 1 marks:"))
-# num2=int(input("Enter subject 2 marks:"))
-# num3=int(input("Enter subject 3 marks:"))
-# num4=int(input("Enter subject 4 marks:"))
-# num5=int(input("Enter subject 5 marks:"))
 
-# total=num1+num2+num3+num4+num5
-# numperc=total/5
-# print("Total marks:",total)
-# print("Percentage:",numperc)
+subjectOne = int(input("Enter a subjectOne Marks : "))
+subjectTwo = int(input("Enter a subjectTwo Marks : "))
+subjectThree = int(input("Enter a subjectThree Marks : "))
+subjectFour = int(input("Enter a subjectFour Marks : "))
+SubjectFive = int(input("Enter a SubjectFive Marks : "))
 
-# if total>=90.0:
-#     print("Grade O")
-# elif 90.0>= total<60.0:
-#     print("Grade A")
-# elif 60.0>=total<45.0:
-#     print("grade B")
-# elif 45.0>=total<35.0:
-#     print("grade C")
-# elif 34.0>=total<0:
-#     print("grade F")
+if subjectOne >= 35 and subjectTwo >= 35 and subjectThree >= 35 and subjectFour >= 35 and SubjectFive >= 35:
+    print("Congratulations You have passed all subjects")
+else:
+    print("You have failed some subjects")
 
-# else:
-#     print("Fail")
+TotalMarks = subjectOne + subjectTwo + subjectThree + subjectFour + SubjectFive
+print(TotalMarks)
 
+totalPercentage = subjectOne + subjectTwo + subjectThree + subjectFour + SubjectFive
+totalPercentage = totalPercentage / 5
+print(totalPercentage)
 
+if totalPercentage >= 90.0:
+    print("Congratulations You have passed O Grade")
+elif totalPercentage >= 60.0 and totalPercentage < 90.0:
+    print("You have passed A Grade")
+elif totalPercentage >= 40.0 and totalPercentage < 60.0:
+    print("You have passed B Grade")
+elif totalPercentage >= 35.0 and totalPercentage < 40.0:
+    print("You have passed C Grade")
+elif totalPercentage > 35 and subjectOne < 35 and subjectTwo < 35 and subjectThree < 35 and subjectFour < 35 and SubjectFive < 35:
+    print("You have Failed")
+else:
+    print("Enter Valid")
 
 # for loop
 
